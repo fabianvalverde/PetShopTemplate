@@ -35,7 +35,7 @@ header {
 
 #logo {
     font-weight: bold;
-    font-size: 25px;
+    font-size: 30px;
     margin: 0px;
     display: inline-flex;
     padding: 3vw;
@@ -48,7 +48,6 @@ header {
     font-weight: bold;
     border: 7px solid #f1f1f1;
     position: relative;
-    z-index: 2;
     width: 80%;
     padding: 5px;
     text-align: center;
@@ -158,6 +157,7 @@ footer {
     overflow: auto;
     background-color: #ffffff;
     box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.4);
+    z-index: 2;
 }
 
 .navLines:hover .nav-links {
@@ -219,11 +219,11 @@ footer {
     }
     
     .hero h1 {
-        font-size: 8.5rem;
+        font-size: 8rem;
     }
     
     .hero p {
-        font-size: 4rem;
+        font-size: 3rem;
     }
     
     .featured-products {
@@ -233,7 +233,7 @@ footer {
     }
     
     .featured-products h2 {
-        font-size: 3rem;
+        font-size: 2rem;
         margin-bottom: 2rem;
     }
     
@@ -273,6 +273,7 @@ footer {
     #logo {
         font-weight: bold;
         font-size: 30px;
+        padding-right: 0;
     }
     
     /* nav styles */
@@ -280,10 +281,16 @@ footer {
     .nav-links a {
         display: block;
         text-align: right;
-        font-size: 1.2rem;
+        font-size: 1rem;
         font-weight: normal;
         text-transform: uppercase;
         color: #FFFFFF;
+        padding-top: 0;
+        padding-bottom: 0;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        border-right: 0.5px solid #4c4c4c;
+        border-left: 0.5px solid #4c4c4c;  
     }
 
     .nav-links {
