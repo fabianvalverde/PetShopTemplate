@@ -1,0 +1,31 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import SearchBar from '../components/SearchBar.astro';
+const pageTitle = "Productos";
+---
+<BaseLayout pageTitle={pageTitle}>
+
+    <SearchBar />
+
+    <section class="featured-products">
+        <h2>Featured Products</h2>
+        <div class="product">
+            <div class="product-item">
+                <img src="dog-food.jpg" alt="Dog Food">
+                <h3>Dry Dog Food</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <div class="product-item">
+                <img src="cat-food.jpg" alt="Cat Food">
+                <h3>Dry Cat Food</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <div class="product-item">
+                <img src="bird-food.jpg" alt="Bird Food">
+                <h3>Bird Food</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+        </div>
+    </section>
+
+</BaseLayout>
