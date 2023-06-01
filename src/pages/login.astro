@@ -1,0 +1,24 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+const pageTitle = "Trabajos Que Ayudan";
+---
+<BaseLayout pageTitle={pageTitle}>
+    <div>
+        <h1 align="center">Iniciar sesion</h1>
+    </div>
+    <div class="login-container">
+        <label for="username">Nombre de usuario</label>
+        <input type="text" id="username" name="username" required>
+        <label for="password">Contraseña</label>
+        <input type="password" id="password" name="password" required>
+        <div class="form-group">
+        <div class="form-group">
+        <label for="role">¿Iniciar sesión como comprador o proveedor?</label>
+        <select id="role" name="role">
+        <option value="comprador">Comprador</option>
+        <option value="proveedor">Proveedor</option>
+        </select>
+        </div>
+        <input type="submit" value="Iniciar sesión">
+    </div>
+</BaseLayout>
